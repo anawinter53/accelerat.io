@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0 auto;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 0;
+
+}
+
+header {
+    background-color: rgb(250, 232, 211);
+    padding: 3px;
+    padding-left: 15px;
+    font-size: 15px;
+
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    padding: .5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    display: none;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-bottom: .5rem;
+    gap: .75rem;
+}
+
+.form-group > label {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+
+}
+
+.form-group > input {
+    border: 1px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+}
+
+.form-group > :last-child {
+    margin: 0;
+}
+
+.step-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card.active {
+    display: block;
+}

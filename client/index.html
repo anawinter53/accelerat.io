@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--add google fonts-->
-    <link rel="stylesheet" href="index.css">
-    <!--link to js-->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Accelerat.io</title>
 </head>
 <body>
@@ -16,30 +16,67 @@
         </nav>
     </header>
     <main>
-        <div id="prompt">
+        <div>
         <br>
+        <div style="text-align: center"> 
         <h2>Want to make Accelerat.io even better?</h2>
-        <h3>Send in your review below!</h3>
+        <h3>Have your say, send in your review below!</h3>
+        </div>
         <br>
         </div>
-        <div id="form">
-            <form>
-                <br><br>
-                <label for="bootcamp">Bootcamp:</label>
-                <input type="text" id="bootcamp" name="bootcamp"><br><br>
+        <form data-multi-step>
+            <div class="card active" data-step="1">
+                <h3 class="step-title">Let's get the basics about your bootcamp experience</h3>
+                <div class="form-group">
+                    <label for="bootcamp">Name of the bootcamp:</label>
+                    <input type="text" id="bootcamp" name="bootcamp">
+                </div>
+                <div class="form-group" >
+                    <label for="bootcamp-format">Format of your bootcamp:</label>
+                    <div style="flex-direction: row"> 
+                        <label for="virtual">Virtual</label>
+                        <input type="radio" id="bootcamp-format" name="virtual">
+                        <label for="hybrid">Hybrid</label>
+                        <input type="radio" id="bootcamp-format" name="hybrid">
+                        <label for="in-person">In-person</label>
+                        <input type="radio" id="bootcamp-format" name="in-person">
+                   </div>
+                </div>
+                <button class="button" id="next">Next</button>
+            </div>
+            <div class="card" data-step="2">
+                <h3 class="step-title">Now to get into the details of your experience</h3>
+                <div class="form-group">
+                    <label for="pros">Pros:</label>
+                    <input type="text" id="pros" name="pros">
+                </div>
+                <div class="form-group">
+                    <label for="cons">Cons:</label>
+                    <input type="text" id="cons" name="cons">
+                </div>
+                <div class="form-group">
+                    <label for="overall">Overall Experience</label>
+                    <input type="text" id="overall" name="overall">
+                </div>
+                <button class="button" id="previous">Previous</button>
+                <button class="button" id="next">Next</button>
+            </div>
 
-                <label for="review">Review:</label>
-                <input type="text" id="review" name="review"><br><br>
-
-                Would you recommend this bootcamp? <br>
-                <label for="yes">Yes</label>
-                <input type="checkbox" id="recommend" name="yes">
-                <label for="no">No</label>
-                <input type="checkbox" id="recommend" name="no"><br><br>
+            <div class="card" data-step="3">
+                <h3 class="step-title">Finally, the ultimate question...</h3>
+                <div class="form-group">
+                    <label for="bootcamp-format">Would you recommend this bootcamp?</label>
+                    <div style="flex-direction: row"> 
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="recommend" name="yes">
+                        <label for="no">No</label>
+                        <input type="radio" id="recommend" name="no"><br><br>
+                    </div>
+                </div>
+                <button class="button" id="previous">Previous</button>
                 <button class="button" id="submit">Submit</button>
-                <br><br>
-            </form>
-        </div>
+            </div>               
+        </form>
     </main>
 </body>
 </html>
