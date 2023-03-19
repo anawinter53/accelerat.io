@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0 auto;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 0;
+
+}
+
+header {
+    background-color: rgb(250, 232, 211);
+    padding: 3px;
+    padding-left: 15px;
+    font-size: 15px;
+
+}
+
+main {
+    text-align: center;
+}
+
+#prompt {
+    background-color: cornsilk;
+}
+
+#form {
+    background-color: beige;
+    border-radius: 100px;
+    border-color: black;
+}
