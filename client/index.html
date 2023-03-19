@@ -25,7 +25,7 @@
         <br>
         </div>
         <form data-multi-step>
-            <div class="card active" data-step="1">
+            <div class="card active" data-step>
                 <h3 class="step-title">Let's get the basics about your bootcamp experience</h3>
                 <div class="form-group">
                     <label for="bootcamp">Name of the bootcamp:</label>
@@ -42,9 +42,9 @@
                         <input type="radio" id="bootcamp-format" name="in-person">
                    </div>
                 </div>
-                <button class="button" id="next">Next</button>
+                <button class="button" id="next" data-next>Next</button>
             </div>
-            <div class="card" data-step="2">
+            <div class="card" data-step>
                 <h3 class="step-title">Now to get into the details of your experience</h3>
                 <div class="form-group">
                     <label for="pros">Pros:</label>
@@ -58,11 +58,10 @@
                     <label for="overall">Overall Experience</label>
                     <input type="text" id="overall" name="overall">
                 </div>
-                <button class="button" id="previous">Previous</button>
-                <button class="button" id="next">Next</button>
+                <button class="button" id="previous" data-previous>Previous</button>
+                <button class="button" id="next" data-next>Next</button>
             </div>
-
-            <div class="card" data-step="3">
+            <div class="card" data-step>
                 <h3 class="step-title">Finally, the ultimate question...</h3>
                 <div class="form-group">
                     <label for="bootcamp-format">Would you recommend this bootcamp?</label>
@@ -73,7 +72,7 @@
                         <input type="radio" id="recommend" name="no"><br><br>
                     </div>
                 </div>
-                <button class="button" id="previous">Previous</button>
+                <button class="button" id="previous" data-previous>Previous</button>
                 <button class="button" id="submit">Submit</button>
             </div>               
         </form>
