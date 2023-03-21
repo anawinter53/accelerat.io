@@ -25,7 +25,7 @@
         <br>
         </div>
         <form data-multi-step>
-            <div class="card active" data-step>
+            <div class="card" data-step>
                 <h3 class="step-title">Let's get the basics about your bootcamp experience</h3>
                 <div class="form-group">
                     <label for="bootcamp">Name of the bootcamp:</label>
@@ -35,11 +35,11 @@
                     <label for="bootcamp-format">Format of your bootcamp:</label>
                     <div style="flex-direction: row"> 
                         <label for="virtual">Virtual</label>
-                        <input type="radio" id="bootcamp-format" name="virtual">
+                        <input type="radio" id="virtual" name="bootcamp-format" value="virtual">
                         <label for="hybrid">Hybrid</label>
-                        <input type="radio" id="bootcamp-format" name="hybrid">
+                        <input type="radio" id="hybrid" name="bootcamp-format" value="hybrid">
                         <label for="in-person">In-person</label>
-                        <input type="radio" id="bootcamp-format" name="in-person">
+                        <input type="radio" id="in-person" name="bootcamp-format" value="in-person">
                    </div>
                 </div>
                 <button class="button" id="next" data-next>Next</button>
@@ -67,9 +67,9 @@
                     <label for="bootcamp-format">Would you recommend this bootcamp?</label>
                     <div style="flex-direction: row"> 
                         <label for="yes">Yes</label>
-                        <input type="radio" id="recommend" name="yes">
+                        <input type="radio" id="yes" name="recommend">
                         <label for="no">No</label>
-                        <input type="radio" id="recommend" name="no"><br><br>
+                        <input type="radio" id="no" name="recommend"><br><br>
                     </div>
                 </div>
                 <button class="button" id="previous" data-previous>Previous</button>
